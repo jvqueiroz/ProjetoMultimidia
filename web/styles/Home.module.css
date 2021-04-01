@@ -1,0 +1,289 @@
+.container {
+  min-height: 100vh;
+  display: flex;
+  background: url("/imagens/fundo.jpg");
+  background-size: 100%;
+  font-family: Montserrat;
+  font-style: normal;
+  color: #4A4848;
+}
+.menuLateral{
+  background: rgba(248, 242, 251, 0.90);
+  backdrop-filter: blur(15%);
+  width: 20%;
+  min-height: 100%;
+  flex-direction: column;
+  padding: 30px;  
+}
+.img{
+  border-radius: 800px;
+  outline: none;
+  
+}
+.h6{
+  margin-top: 10px;
+  font-size: 12px;
+  font-weight: 50;
+}
+.perfil{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 20px;
+}
+.descricao{
+  font-size: 10px;
+  color: #c0bec0;
+}
+.descricao2{
+  font-size: 16px;
+  line-height: 22px;
+  color: #6e6e6e;
+  padding-bottom: 22px;
+}
+.main{
+  min-height: 100%;
+  width: 100%;
+  flex-direction: column;
+}
+.cabecalho{
+  background: linear-gradient(90deg, #FEE5E7 0%, #DAF7FE 102.79%);
+  min-height: 50%;
+  width: 100%;
+  padding-top: 30px; 
+  padding-right: 30px;
+  padding-left: 30px;
+  padding-bottom: 0px;
+}
+.body{
+  background:#F7F9FB;
+  min-height: 50%;
+  width: 100%;
+  padding-right: 30px;
+  padding-left: 28px;
+  padding-top: 20px; 
+}
+.navbar{
+  min-height: 5%;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  width: 100%;
+ 
+}
+.camptitulo{
+  min-height: 90%;
+  width: 100%;
+  display: flex;
+}
+.campinfo{
+  padding-top: 60px;
+  width: 40%;
+  padding-bottom: 49px;
+}
+.campelemento{
+  width: 60%;
+  min-height: 100%;
+  background: url("/imagens/elementocabecalho.png");
+  background-repeat: no-repeat;
+  background-size: 105%;
+  background-position: 50% 10%;   
+}
+.h3{
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 59px;
+}
+.card{
+  background: #E50E4E;
+  font-size: 10px;
+  padding: 2px 10px;
+  color: #DAF7FE;
+  border-radius: 10px;
+}
+.iconNext{
+  width: 25px;
+  margin-right: 10px;
+}
+.iconConfig{
+  width: 25px;
+  margin-left: 600px;
+}
+.input{
+  border: 1px solid #8A8B8B;
+  padding: 5px;
+  padding-right: 90px;
+  border-radius: 10px;
+  background: none;
+  margin-left: 100px;
+}
+.controles{
+  width: 100%;
+  min-height: 9%;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  background: rgba(248, 248, 249, 0.95);
+  position: fixed;
+  bottom: 0px;
+  grid-template-columns: 1fr 3fr 1fr;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.iconControle{
+  width: 40px;
+}
+.buttonplay{
+  width: 45px;
+  height: 45px;
+  background: url("/imagens/play.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  border: none;
+}
+.buttonpause{
+  width: 45px;
+  height: 45px;
+  background: url("/imagens/pause.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  border: none;
+}
+.buttonskip_next{
+  width: 30px;
+  height: 30px;
+  background: url("/imagens/skip_next.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  border: none;
+}
+.buttonskip_previous{
+  width: 30px;
+  height: 30px;
+  background: url("/imagens/skip_previous.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  border: none;
+}
+.barraplay{
+  position:fixed;
+  width: 97%;
+  height: 3px;
+  cursor: pointer;
+  background: #E50E4E;
+  outline: none;
+  appearance: none;
+  display: inline-block;
+}
+.barravolume{
+  width: 45%;
+  height: 3px;
+  appearance: none;
+  outline: none;
+  cursor: pointer;
+  background: #8A8B8B;
+  display: inline-block;
+}
+.infomusica{
+  
+  display: flex;
+  align-items: center;
+}
+.controlesmusica{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.controlesvol{
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+.capacd{
+  margin-right: 8px;
+  border-radius: 5px;
+}
+.titulomusica{
+  margin-bottom: 2.5px;;
+  margin-right: 25px;
+}
+.iconControles{
+  margin-right: 10px;
+}
+.iconvol{
+  margin-left: 15px;
+}
+.tempomusica{
+  display: flex;
+  align-items: center;
+  font-size: 10px;
+}
+.tempoinicial{
+  color: #8A8B8B;
+}
+.tempofinal{
+  color: #afafaf;
+}
+.tituloBody{
+  font-size: 22px;
+  padding-bottom: 15px;
+}
+.controlefaixa{
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  
+  padding-left: 8px;
+}
+.controlefaixa2{
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 8px;
+  background: #F0F0F0;
+  border-radius: 10px;
+}
+.titulofaixa{
+  font-size: 15px;
+  align-items: center;
+  margin-right: 410px;
+}
+.numFaixa{
+  font-size: 15px;
+  font-weight: bold;
+  color: #8A8B8B;
+  margin-right: 10px;
+}
+.tituloAlbum{
+  font-size: 12px;
+  color: #BBBBBD;
+  margin-right: 80px;
+}
+.iconBody{
+  margin-right: 20px;
+}
+.iconFaixa{
+  margin-right: 80px;
+}
+.opMenu{
+  font-size: 12px;
+  
+  padding-bottom: 4px;
+  color: #5c5c5c;
+}
+.opMenu2{
+  font-size: 12px;
+
+  padding-bottom: 4px;
+  color: #E50E4E;
+  font-weight: medium;
+}
+.lista{
+  padding-bottom: 5px;
+}
+.opsMenuLateral{
+  padding-top: 10px;
+}
