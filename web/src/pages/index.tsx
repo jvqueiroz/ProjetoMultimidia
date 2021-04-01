@@ -146,39 +146,44 @@ export default function Home() {
           </section>
         </article>
         
-        <article className={styles.controles}>
+        <article className={styles.controles2}>
 
-        <input className={styles.barraplay} type="range" min="0" max={tempoFinal} step="0.01" value={tempoInicial} onChange={e => configTempoInical(Number(e.target.value))}></input>
-
-          <section className={styles.infomusica}>
-            <img className={styles.capacd} src="/imagens/capacd.jpg" 
-            width={55}
-            height={40}
-            />
-            <div className={styles.titulomusica}>
-              <div className={styles.h6}>Rap do Tobirama (Naruto)</div>
-              <div className={styles.descricao}>Nerd Hits</div>
-            </div>
-            <img className={styles.iconControles} src="/imagens/favorite.png" width={15} height={15}/>
-            <img src="/imagens/reply.png" width={15} height={15}/>
-          </section>
-          <section className={styles.controlesmusica}>
-            <button className={styles.buttonskip_previous}></button>
-            {isPlaying ? (<button onClick={tooglePlayPause} className={styles.buttonpause}></button>): 
-            (<button onClick={tooglePlayPause} className={styles.buttonplay}></button>)}
-            <button className={styles.buttonskip_next}></button>
-          </section>
-          <section className={styles.controlesvol}>
-          <div className={styles.tempomusica}>
-            <div className={styles.tempoinicial}>{secondsToTime(tempoInicial)}/</div><div className={styles.tempofinal}>{secondsToTime(tempoFinal)}</div>
-          </div>
-          <img className={styles.iconvol} src="/imagens/queue_music.png" width={20} height={20}/>
-          {isMute ? <img className={styles.iconvol} onClick={toongleMute} src="/imagens/volume_off.png" width={20} height={20}/> :
-          <img className={styles.iconvol} onClick={toongleMute} src="/imagens/volume_up.png" width={20} height={20}/>}
-          
-          <input className={styles.barravolume} type="range" min="0" max="1" step="0.01" value={volume} onChange={e => configVolume(Number(e.target.value))}></input>
+        <section className={styles.controles}>
+            <section className={styles.infomusica}>
+                <img className={styles.capacd} src="/imagens/capacd.jpg" 
+                width={55}
+                height={40}
+                />
+                <div className={styles.titulomusica}>
+                  <div className={styles.h6}>Rap do Tobirama (Naruto)</div>
+                  <div className={styles.descricao}>Nerd Hits</div>
+                </div>
+                <img className={styles.iconControles} src="/imagens/favorite.png" width={15} height={15}/>
+                <img src="/imagens/reply.png" width={15} height={15}/>
+            </section>
+            <section className={styles.controlesmusica}>
+                <button className={styles.buttonskip_previous}></button>
+                {isPlaying ? (<button onClick={tooglePlayPause} className={styles.buttonpause}></button>): 
+                (<button onClick={tooglePlayPause} className={styles.buttonplay}></button>)}
+                <button className={styles.buttonskip_next}></button>
+              </section>
+              <section className={styles.controlesvol}>
+              <div className={styles.tempomusica}>
+                <div className={styles.tempoinicial}>{secondsToTime(tempoInicial)}/</div><div className={styles.tempofinal}>{secondsToTime(tempoFinal)}</div>
+              </div>
+              <img className={styles.iconvol} src="/imagens/queue_music.png" width={20} height={20}/>
+              {isMute ? <img className={styles.iconvol} onClick={toongleMute} src="/imagens/volume_off.png" width={20} height={20}/> :
+              <img className={styles.iconvol} onClick={toongleMute} src="/imagens/volume_up.png" width={20} height={20}/>}
+              
+              <input className={styles.barravolume} type="range" min="0" max="1" step="0.01" value={volume} onChange={e => configVolume(Number(e.target.value))}></input>
+            
+            </section>
+        </section>
+        <section className={styles.campoBarraPlay}>
+          <input className={styles.barraplay} type="range" min="0" max={tempoFinal} step="0.01" value={tempoInicial} onChange={e => configTempoInical(Number(e.target.value))}></input>
+        </section>
         
-          </section>
+          
           
         </article>
     </div>

@@ -124,12 +124,21 @@
   display: grid;
   justify-content: center;
   align-items: center;
-  background: rgba(248, 248, 249, 0.95);
   position: fixed;
   bottom: 0px;
   grid-template-columns: 1fr 3fr 1fr;
   padding-left: 20px;
   padding-right: 20px;
+}
+.controles2{
+  width: 100%;
+  min-height: 9%;
+  display: table-column;
+  justify-content: center;
+  align-items: center;
+  background: rgba(248, 248, 249, 0.95);
+  position: fixed;
+  bottom: 0px;
 }
 .iconControle{
   width: 40px;
@@ -175,7 +184,13 @@
   outline: none;
   appearance: none;
   display: inline-block;
+  
 }
+.campoBarraPlay{
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
 .barravolume{
   width: 45%;
   height: 3px;
@@ -186,9 +201,9 @@
   display: inline-block;
 }
 .infomusica{
-  
   display: flex;
   align-items: center;
+  padding-top: 2px;
 }
 .controlesmusica{
   display: flex;
